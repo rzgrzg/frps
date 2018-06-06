@@ -14,11 +14,3 @@ VOLUME /usr/local/frp/conf
 EXPOSE 80 443 7000 7500
 
 CMD ./frps -c ./conf/frps.ini
-
-
-docker run --name frps --restart=always \
-    -p 80:80 \
-    -p 443:443 \
-    -p 7000:7000 \
-    -p 7500:7500 \
-    -d rzgrzg/frps
