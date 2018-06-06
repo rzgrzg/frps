@@ -13,4 +13,4 @@ VOLUME /var/frp/conf
 
 EXPOSE 80 443 7000 7500
 
-CMD ./frps -c ./conf/frps.ini
+CMD ./frps -c /var/frp/conf/frps.ini
