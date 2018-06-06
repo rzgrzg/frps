@@ -4,10 +4,10 @@ ENV FRP_VERSION 0.20.0
 WORKDIR /usr/local/frp
 RUN mkdir /usr/local/frp/conf
 
-ADD https://github.com/fatedier/frp/releases/download/v$FRP_VERSION/frp_$FRP_VERSION_linux_amd64.tar.gz /var/frp/frp_$FRP_VERSION_linux_amd64.tar.gz
-RUN tar -zxf frp_$FRP_VERSION_linux_amd64.tar.gz frp_$FRP_VERSION_linux_amd64/frps -C /usr/local/frp \
-    tar -zxf frp_$FRP_VERSION_linux_amd64.tar.gz frp_$FRP_VERSION_linux_amd64/frps*.ini -C /usr/local/frp/conf \
-    && rm frp_$FRP_VERSION_linux_amd64.tar.gz
+ADD https://github.com/fatedier/frp/releases/download/v$FRP_VERSION/frp_${FRP_VERSION}_linux_amd64.tar.gz /var/frp/frp_${FRP_VERSION}_linux_amd64.tar.gz
+RUN tar -zxf frp_${FRP_VERSION}_linux_amd64.tar.gz frp_${FRP_VERSION}_linux_amd64/frps -C /usr/local/frp \
+    tar -zxf frp_${FRP_VERSION}_linux_amd64.tar.gz frp_${FRP_VERSION}_linux_amd64/frps*.ini -C /usr/local/frp/conf \
+    && rm frp_${FRP_VERSION}_linux_amd64.tar.gz
 
 VOLUME /usr/local/frp/conf
 
