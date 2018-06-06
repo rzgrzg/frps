@@ -9,5 +9,5 @@ docker run --name frps --restart=always \
     -p 443:443 \  
     -p 7000:7000 \  
     -p 7500:7500 \  
-    -v /var/frp/conf/frps.ini:frps.ini \  
+    -v /var/frp/conf:/conf \  
     -d rzgrzg/frps  
