@@ -13,4 +13,4 @@ docker run --name frps --restart=always \
 -d rzgrzg/frps
 
 
-then put frps.ini to ~/frp/conf
+then put frps.ini to ~/frp/
