@@ -1,6 +1,6 @@
 FROM alpine
 MAINTAINER rzgrzg,<13416155@qq.com>
-ENV FRP_VERSION 0.20.0
+ENV FRP_VERSION 0.21.0
 WORKDIR /var/frp
 RUN mkdir /var/frp/conf
 
